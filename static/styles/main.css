@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #1F2235;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav{
+    background: #2B2D42;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    color: #fff;
+    font-size: 32px;
+}
+
+nav a{
+    color: #9ecbff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+hr{
+    display: none;
+}
+
+/* HOME */
+.home-container{
+    width: 70%;
+    margin: 40px auto;
+}
+
+.home-container h2{
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.home-container h5{
+    color: #bdbdc7;
+    margin-bottom: 30px;
+}
+
+.home-container>a{
+    display: inline-block;
+    background: #4A7CFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.vote-card{
+    background: #343750;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.vote-card span{
+    color: #58b6ff;
+    font-weight: bold;
+}
+
+.vote-card h5{
+    color: white;
+    margin: 12px 0;
+}
+
+.vote-card small{
+    color: #d2d2d2;
+    font-size: 16px;
+}
+
+.vote-card a{
+    color: #58b6ff;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    background: #4A7CFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}

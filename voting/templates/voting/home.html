@@ -1,0 +1,29 @@
+{% extends 'main.html'%}
+
+
+{% block content %}
+
+
+<div class="home-container">
+
+  <h2>ABUJA VOTING PLATFORM</h2>
+  <h5>{{votes_count}} available votes</h5>
+
+  <a href="{% url 'vote' %}">Vote for your Prefered candidate </a>
+  {% for vote in voting_candidates %}
+
+  <div class="vote-card">
+      
+          <span>@{{ vote.user.username }}</span>
+          <h5>{{vote.id}} -- <a href="">{{ vote.candidate.party }}</a></h5>
+          <small> Voted for {{vote.candidate.name}}</small>
+          <hr>
+      
+
+  </div>
+  {% endfor %}
+
+</div>
+
+{% endblock content %}
+

@@ -1,0 +1,16 @@
+<nav>    
+    <a href="/">
+        <h1>VOTING SITE</h1>
+    </a>
+
+    {% if request.user.is_authenticated %}
+    <div>
+        <span>Hello {{request.user }}</span>
+        <a href="{% url 'logout' %}">Logout </a>
+    </div>
+
+    {% else %}
+    <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+    <hr>
+</nav>    
