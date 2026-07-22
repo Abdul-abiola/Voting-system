@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -125,4 +127,19 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-STATIC_ROOT  = BASE_DIR / 'staticfiles'
+STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')
+
+STORAGES = {
+    "default" : {
+        "BACKEND" : "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND" : "whitenoise.storage.CompressedManifestStaticFiles",
+    },
+}
+
+MEDIA_URL = '/media'
+MEDIA_ROOT = BASE_DIR / 'media'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGIN = True
