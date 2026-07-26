@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-j=d9^=zu83zp*cf*qflbiuj1xfdtxs)w1zkxvw*+@$j@kp$#dw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['abuja-voting-system.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['voting-system', 'localhost', '127.0.0.1']
 
 
 # Application definition
